@@ -18,3 +18,5 @@ yarn-error.log*
 
 /PN2_page
 
+.sass-cache
+
