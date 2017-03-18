@@ -1,16 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import { Router, Route, IndexRoute, Link, hashHistory } from 'react-router'
+import { Router, Route, hashHistory } from 'react-router';
+
 import Header from './components/Header';
-import WelcomeContent from './components/WelcomeContent';
+/*
 import OfferContent from './components/OfferContent';
 import GalleryContent from './components/GalleryContent';
-import MoviesContent from './components/MoviesContent';
+import MapContent from './components/MapContent';
 import ContactContent from './components/ContactContent';
-
+import OfferLink from './components/OfferLink';
+import GalleryLink from './components/GalleryLink';
+import MapLink from './components/MapLink';
+import ContactLink from './components/ContactLink';
+*/
+/*
 class App extends React.Component {
-  constructor(props) {
+  constructor() {
     super();
     this.state = {
       clicked1: false,
@@ -60,15 +66,18 @@ class App extends React.Component {
      <div className="container">
       <Header />
       <nav>
-        {this.state.clicked1 ? <Link onClick={this.handleClick1} style={{ background: 'lightblue', color: 'darkred' }} to="offercontent">Offer Link</Link> : <Link onClick={this.handleClick1} to="offercontent">Offer Link</Link>}
-        {this.state.clicked2 ? <Link onClick={this.handleClick2} style={{ background: 'lightblue', color: 'darkred' }} to="gallerycontent">Gallery Link</Link> : <Link onClick={this.handleClick2} to="gallerycontent">Gallery Link</Link>}
-        {this.state.clicked3 ? <Link onClick={this.handleClick3} style={{ background: 'lightblue', color: 'darkred' }} to="moviescontent">Offer Link</Link> : <Link onClick={this.handleClick3} to="offercontent">Offer Link</Link>}
-        {this.state.clicked4 ? <Link onClick={this.handleClick4} style={{ background: 'lightblue', color: 'darkred' }} to="contactcontent">Contact Link</Link> : <Link onClick={this.handleClick4} to="contactcontent">Contact Link</Link>}
+        <OfferLink onClick={this.handleClick1} />
+        <GalleryLink onClick={this.handleClick2} />
+        <MapLink onClick={this.handleClick3} />
+        {this.state.clicked4 ? <ContactLink onClick={this.handleClick4} style={{ background: 'lightblue', color: 'darkred' }}/> : <ContactLink onClick={this.handleClick4} />}
       </nav>
       <main>
         <aside className="left_as"></aside>
         <div className="content">
-          {this.props.children}
+          {this.state.clicked1 ? <OfferContent /> : null}
+          {this.state.clicked2 ? <GalleryContent /> : null}
+          {this.state.clicked3 ? <MoviesContent /> : null}
+          {this.state.clicked4 ? <ContactContent /> : null}
         </div>
         <aside className="right_as"></aside>
       </main>
@@ -77,19 +86,12 @@ class App extends React.Component {
     );
    }
 };
-
-/*
-
 */
 
 ReactDOM.render((
   <Router history={hashHistory}>
-    <Route path="/" component={App}>
-      <IndexRoute component={WelcomeContent} />
-      <Route path="offercontent" component={OfferContent} />
-      <Route path="gallerycontent" component={GalleryContent} />
-      <Route path="moviescontent" component={MoviesContent} />
-      <Route path="contactcontent" component={ContactContent} />
-    </Route>
+    <Route path="/" component={Header}/>
   </Router>
-), document.getElementById('app'));
+),
+  document.getElementById('app')
+);

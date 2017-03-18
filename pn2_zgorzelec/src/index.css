@@ -3,22 +3,185 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    color: white;
+    color: black;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Lato:900);
+*, *::before, *::after{
+  box-sizing:border-box;
+}
+
+body{
+  font-family: 'Lato', sans-serif;
+}
+
+div.foo{
+  width: 90%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: flex-end;
+}
+.letter{
+  display: inline-block;
+  font-weight: 900;
+  font-size: 2rem;
+  margin: 0.2em;
+  position: relative;
+  color: #00B4F1;
+  transform-style: preserve-3d;
+  perspective: 400;
+  z-index: 1;
+  margin: auto auto 0 auto;
+  height: auto;
+}
+.letter:before, .letter:after{
+  position:absolute;
+  content: attr(data-letter);
+  transform-origin: top left;
+  top:0;
+  left:0;
+}
+.letter, .letter:before, .letter:after{
+  transition: all 0.3s ease-in-out;
+}
+.letter:before{
+  color: saddlebrown;
+  text-shadow: 
+    -1px 0px 1px rgba(255,255,255,.8),
+    1px 0px 1px rgba(0,0,0,.8);
+  z-index: 3;
+  transform:
+    rotateX(0deg)
+    rotateY(-15deg)
+    rotateZ(0deg);
+}
+.letter:after{
+  color: black;
+  z-index:2;
+  transform:
+    scale(1.08,1)
+    rotateX(0deg)
+    rotateY(0deg)
+    rotateZ(0deg)
+    skew(0deg,1deg);
+}
+.letter:hover:before{
+  color: saddlebrown;
+  transform:
+    rotateX(0deg)
+    rotateY(-40deg)
+    rotateZ(0deg);
+}
+.letter:hover:after{
+  transform:
+    scale(1.08,1)
+    rotateX(0deg)
+    rotateY(40deg)
+    rotateZ(0deg)
+    skew(0deg,22deg);
+}
+
+.space {
+  width: 2vw;
 }
 
 body {
+/*
     background-image: url(../src/img/pn2_home.png);
     background-size: cover;
     background-repeat: no-repeat;
+*/
 }
-
 .container {
+  display: flex;
+  flex-direction: column;
+/*
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+*/
+}
+header {
+  /*background-image: url(img/non-profit-kids.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  */
+  height: 10vh;
 }
 
 header h1 {
   font-size: 2rem;
   text-align: center;
+  background-image: url(img/non-profit-kids.png);
+  background-size: 20% 100%;
+  background-repeat: repeat;
+  background-color: gold;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+span {
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  width: 70vh;
+  height: 5vh;
+  margin: 0 auto;
+  display: flex;
+  text-align: center;
+}
+
+nav * {
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  margin: auto 0;
+}
+
+a {
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+}
+
+aside {
+  width: 10vw;
+}
+
+.content {
+  width: 80vw;
+  height: 80vh;
+  background-image: url(../src/img/pn2_home.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.kontakt {
+  display: flex;
+  background-color: rgba(255,255,255, 0.5);
+  width: 100%;
+  height: 100%;
+}
+
+.kontakt_info {
+}
+
+iframe {
+  width: 70vh;
+  height: 50vh;
+}
+
+footer {
+  height: 5vh;
 }

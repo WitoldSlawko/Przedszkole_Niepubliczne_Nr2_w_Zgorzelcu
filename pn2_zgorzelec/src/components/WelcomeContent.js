@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-class MapContent extends React.Component {
+class WelcomeContent extends React.Component {
   render() {
     return (
       <div {...this.props}>
-        Map Content
+        Welcome Content
       </div>
     );
   }
 }
 
-export default MapContent;
+export default WelcomeContent;

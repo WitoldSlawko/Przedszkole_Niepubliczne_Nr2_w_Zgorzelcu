@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-class MapLink extends React.Component {
+class MoviesLink extends React.Component {
   render() {
     return (
       <a {...this.props}>
@@ -11,4 +11,4 @@ class MapLink extends React.Component {
   }
 }
 
-export default MapLink;
+export default MoviesLink;
