@@ -59,10 +59,10 @@ class App extends React.Component {
     return (
      <div className="container">
       <Header />
-      <nav>
+      <nav className="nav_1">
         {this.state.clicked1 ? <Link onClick={this.handleClick1} style={{ background: 'lightblue', color: 'darkred' }} to="offercontent">Offer Link</Link> : <Link onClick={this.handleClick1} to="offercontent">Offer Link</Link>}
         {this.state.clicked2 ? <Link onClick={this.handleClick2} style={{ background: 'lightblue', color: 'darkred' }} to="gallerycontent">Gallery Link</Link> : <Link onClick={this.handleClick2} to="gallerycontent">Gallery Link</Link>}
-        {this.state.clicked3 ? <Link onClick={this.handleClick3} style={{ background: 'lightblue', color: 'darkred' }} to="moviescontent">Offer Link</Link> : <Link onClick={this.handleClick3} to="offercontent">Offer Link</Link>}
+        {this.state.clicked3 ? <Link onClick={this.handleClick3} style={{ background: 'lightblue', color: 'darkred' }} to="moviescontent">Movies Link</Link> : <Link onClick={this.handleClick3} to="moviescontent">Movies Link</Link>}
         {this.state.clicked4 ? <Link onClick={this.handleClick4} style={{ background: 'lightblue', color: 'darkred' }} to="contactcontent">Contact Link</Link> : <Link onClick={this.handleClick4} to="contactcontent">Contact Link</Link>}
       </nav>
       <main>
@@ -78,10 +78,6 @@ class App extends React.Component {
    }
 };
 
-/*
-
-*/
-
 ReactDOM.render((
   <Router history={hashHistory}>
     <Route path="/" component={App}>
@@ -92,4 +88,4 @@ ReactDOM.render((
       <Route path="contactcontent" component={ContactContent} />
     </Route>
   </Router>
-), document.getElementById('app'));
+), document.querySelector('[data-react-application]'));
