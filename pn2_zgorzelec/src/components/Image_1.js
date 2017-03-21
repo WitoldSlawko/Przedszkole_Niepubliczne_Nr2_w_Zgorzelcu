@@ -6,9 +6,17 @@ let Image_1 = function statelessFunctionComponentClass(props) {
     width: '200px',
     margin: '10px 5px 0px 5px'
   };
+  
+  let sectionStyle = {
+  width: '200px',
+  margin: '10px 5px 0px 5px',
+  backgroundImage: "url(" + require("../images/Wystep_przedszkolakow/" + props.source) + ")",
+  backgroundSize: 'cover'
+};
 
   return (
-    <img src={require('../images/Wystep_przedszkolakow/' + props.source)} style={style} />
+    //<img src={require('../images/Wystep_przedszkolakow/' + props.source)} style={style} />
+    <div className='img' style={sectionStyle}></div>
   );
 };
 

@@ -224,7 +224,14 @@ aside {
   flex-wrap: wrap;
 }
 
-img {
+.photos {
+  height: 97%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.img {
   height: 120px;
   width: 20%;
 }
@@ -236,7 +243,19 @@ img {
 .big:active {
   
 }
-img:active {
+/*
+.img:hover::before {
+  content: "Przytrzymaj by powiększyć";
+  height: 20%;
+  width: 50%;
+  text-align: center;
+  background-color: rgba(255,255,255, 0.5);
+  position: flex;
+  color: yellow;
+  z-index:0;
+}
+*/
+.img:active {
   transform: scale(5);
   z-index: 10000;
   top: 40vh;

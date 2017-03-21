@@ -14,7 +14,7 @@ class PhotoBook_1 extends React.Component{
 
   render() {
     return (
-      <div className="photo_book">
+      <div className="photos">
         {this.createImages(photoSet_1.images)}
       </div>
     );

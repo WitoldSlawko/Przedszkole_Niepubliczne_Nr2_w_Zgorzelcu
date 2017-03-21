@@ -1,12 +1,13 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+//import ReactDOM from 'react-dom';
 //import Test from '../img/test/001.jpg';
 //import photoSet from '../json/photoSet.json';
 //import Image from './Image';
-import PhotoBook from './PhotoBook';
+//import PhotoBook from './PhotoBook';
 import PhotoBook_1 from './PhotoBook_1';
 //import Sample from './Sample';
-import Lightbox from 'react-images';
+//import Lightbox from 'react-images';
+import LightBox_1 from './LightBox_1';
 
 class GalleryContent extends React.Component {
   constructor(props) {
@@ -98,17 +99,11 @@ class GalleryContent extends React.Component {
           {this.state.clicked6 ? <a style={{ background: 'lightblue', color: 'darkred' }} onClick={this.handleClick6}>Półkolonia</a> : <a onClick={this.handleClick6}>Półkolonia</a>}
         </nav>
         
-          {this.state.clicked1 ? <PhotoBook_1 /> : null}
-          {this.state.clicked2 ? <div>Występ w MDK<PhotoBook /></div> : null}
+          {this.state.clicked1 ? <div className="photo_book"><LightBox_1 /> <PhotoBook_1 /></div> : null}
+          {this.state.clicked2 ? <div>Występ w MDK</div> : null}
           {this.state.clicked3 ? <div>Jasełka w przedszkolu</div> : null}
           {this.state.clicked4 ? <div>Jasełka w MDK</div> : null}
-          {this.state.clicked5 ? <Lightbox
-        images={[{ src: '../images/test/001.jpg' }, { src: '../images/test/002.jpg' }]}
-        isOpen={this.state.lightboxIsOpen}
-        onClickPrev={this.gotoPrevious}
-        onClickNext={this.gotoNext}
-        onClose={this.closeLightbox}
-      /> : null}
+          {this.state.clicked5 ? <div>Wyvieczka</div> : null}
           {this.state.clicked6 ? <div>Półkolonia</div> : null}
         
         <div className="presenter"></div>
