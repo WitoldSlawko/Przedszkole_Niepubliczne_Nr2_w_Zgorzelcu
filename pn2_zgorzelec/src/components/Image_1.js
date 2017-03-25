@@ -10,7 +10,7 @@ let Image_1 = function statelessFunctionComponentClass(props) {
   let sectionStyle = {
   width: '200px',
   margin: '10px 5px 0px 5px',
-  backgroundImage: "url(" + require("../images/Wystep_przedszkolakow/" + props.source) + ")",
+  backgroundImage: "url(" + require("../images/1_Wystep_przedszkolakow/" + props.source) + ")",
   backgroundSize: 'cover'
 };
 

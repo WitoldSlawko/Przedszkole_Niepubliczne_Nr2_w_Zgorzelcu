@@ -1,13 +1,18 @@
 import React from 'react';
-//import ReactDOM from 'react-dom';
-//import Test from '../img/test/001.jpg';
-//import photoSet from '../json/photoSet.json';
-//import Image from './Image';
-//import PhotoBook from './PhotoBook';
+
 import PhotoBook_1 from './PhotoBook_1';
-//import Sample from './Sample';
-//import Lightbox from 'react-images';
+import PhotoBook_2 from './PhotoBook_2';
+import PhotoBook_3 from './PhotoBook_3';
+import PhotoBook_4 from './PhotoBook_4';
+import PhotoBook_5 from './PhotoBook_5';
+import PhotoBook_6 from './PhotoBook_6';
+
 import LightBox_1 from './LightBox_1';
+import LightBox_2 from './LightBox_2';
+import LightBox_3 from './LightBox_3';
+import LightBox_4 from './LightBox_4';
+import LightBox_5 from './LightBox_5';
+import LightBox_6 from './LightBox_6';
 
 class GalleryContent extends React.Component {
   constructor(props) {
@@ -100,11 +105,11 @@ class GalleryContent extends React.Component {
         </nav>
         
           {this.state.clicked1 ? <div className="photo_book"><LightBox_1 /> <PhotoBook_1 /></div> : null}
-          {this.state.clicked2 ? <div>Występ w MDK</div> : null}
-          {this.state.clicked3 ? <div>Jasełka w przedszkolu</div> : null}
-          {this.state.clicked4 ? <div>Jasełka w MDK</div> : null}
-          {this.state.clicked5 ? <div>Wyvieczka</div> : null}
-          {this.state.clicked6 ? <div>Półkolonia</div> : null}
+          {this.state.clicked2 ? <div className="photo_book"><LightBox_2 /> <PhotoBook_2 /></div> : null}
+          {this.state.clicked3 ? <div className="photo_book"><LightBox_3 /> <PhotoBook_3 /></div> : null}
+          {this.state.clicked4 ? <div className="photo_book"><LightBox_4 /> <PhotoBook_4 /></div> : null}
+          {this.state.clicked5 ? <div className="photo_book"><LightBox_5 /> <PhotoBook_5 /></div> : null}
+          {this.state.clicked6 ? <div className="photo_book"><LightBox_6 /> <PhotoBook_6 /></div> : null}
         
         <div className="presenter"></div>
       </div>
@@ -113,3 +118,12 @@ class GalleryContent extends React.Component {
 }
 
 export default GalleryContent;
+
+/*
+
+          {this.state.clicked2 ? <div>Występ w MDK</div> : null}
+          {this.state.clicked3 ? <div>Jasełka w przedszkolu</div> : null}
+          {this.state.clicked4 ? <div>Jasełka w MDK</div> : null}
+          {this.state.clicked5 ? <div>Wyvieczka</div> : null}
+          {this.state.clicked6 ? <div>Półkolonia</div> : null}
+*/
