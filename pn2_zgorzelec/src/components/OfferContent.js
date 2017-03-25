@@ -1,30 +1,28 @@
 import React from 'react';
 
-
 class OfferContent extends React.Component {
 render() {
     return (
         <div className="oferta">
           <p>
-            <br/>
             Dzieci w przedszkolu w radosnej atmosferze nawiązują kontakty i przyjaźnie. Wpływa to korzystnie na rozwój zachowań społecznych takich jak: tolerancja, ustępowanie, pomoc, cierpliwość, odwaga.
             <br/><br/> 
             NASZE PRZEDSZKOLE OFERUJE: 
             <br/>
-            * kontakty ze środowiskiem
+            * kontakty ze środowiskiem,
             <br/>
-            * poznawanie przyrody 
+            * poznawanie przyrody, 
             <br/>
-            * spotkania z ciekawymi ludźmi 
+            * spotkania z ciekawymi ludźmi, 
             <br/>
             * imprezy kulturalne: kino, teatr,
-            warsztaty teatralne 
+            warsztaty teatralne, 
             <br/>
-            * comiesięczne koncerty muzyków z Filharmonii Jeleniogórskiej na miejscu w przedszkolu
+            * comiesięczne koncerty muzyków z Filharmonii Jeleniogórskiej na miejscu w przedszkolu,
             <br/>
-            * Bal Przebierańców, Dzień Dziecka, Święto Babci i Dziadka 
+            * Bal Przebierańców, Dzień Dziecka, Święto Babci i Dziadka, 
             <br/>
-            * bezpłatnie rytmikę, warsztaty plastyczne, zabawy ruchowe 
+            * bezpłatnie rytmikę, warsztaty plastyczne, zabawy ruchowe, 
             <br/>
             * dodatkowa oferta za opłata to j. niemiecki, j. angielski.
             <br/><br/> 

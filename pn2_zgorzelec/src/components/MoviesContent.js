@@ -1,5 +1,18 @@
 import React from 'react';
-    let styl = {
+    
+class MoviesContent extends React.Component {
+render() {
+    return (
+        <div>
+        </div>
+    );
+}
+}
+export default MoviesContent;
+
+/*
+
+let styl = {
       position:'relative',
       height:'0',
       paddingBottom:'56.21%'
@@ -13,8 +26,8 @@ import React from 'react';
       width:'641px', 
       height:'360px'
     }
-
-class OfferContent extends React.Component {
+    
+    class OfferContent extends React.Component {
 render() {
     return (
         <div style={styl}>
@@ -24,3 +37,5 @@ render() {
 }
 }
 export default OfferContent;
+
+*/
