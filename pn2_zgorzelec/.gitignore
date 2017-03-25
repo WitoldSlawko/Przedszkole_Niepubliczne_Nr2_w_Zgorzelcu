@@ -20,5 +20,5 @@ yarn-error.log*
 
 .sass-cache
 
-/src/images
+/src/images/*
 
