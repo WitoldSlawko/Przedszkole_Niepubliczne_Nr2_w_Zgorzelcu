@@ -22,19 +22,19 @@ render() {
             <br/>
             * Bal Przebierańców, Dzień Dziecka, Święto Babci i Dziadka, 
             <br/>
-            * bezpłatnie rytmikę, warsztaty plastyczne, zabawy ruchowe, 
+            * bezpłatnie rytmikę, warsztaty plastyczne, zabawy ruchowe,
             <br/>
-            * dodatkowa oferta za opłata to j. niemiecki, j. angielski.
+            * j. angielski w podstawie programowej obejmuje dzieci od grupy najmłodszej,
+            <br/>
+            * dodatkowa oferta za opłata to j. niemiecki.
             <br/><br/> 
-            Jesteśmy jedynym przedszkolem na terenie Zgorzelca, które od 14 lat systematycznie współpracuje z przedszkolem Zwergenhaus w Goerlitz. W ramach tej współpracy oferujemy dla dzieci wycieczki do Teatru w Goerliz, Muzeum Przyrodniczego, Pracowni Ceramiki, ZOO, wycieczki autokarowe do parku Dinozaurów w Bautzen (wymagany jest paszport dziecka). 
+            Jesteśmy jedynym przedszkolem na terenie Zgorzelca, które od wielu lat systematycznie współpracuje z przedszkolem Zwergenhaus w Goerlitz. W ramach tej współpracy oferujemy dla dzieci wycieczki do Teatru w Goerliz, Muzeum Przyrodniczego, Pracowni Ceramiki, ZOO, wycieczki autokarowe do parku Dinozaurów w Bautzen (wymagany jest paszport dziecka). 
             <br/><br/>
             Czynnie uczestniczymy w imprezach na terenie miasta. 
             <br/><br/>
             Przedszkole czynne jest w godz. 6:30-16:30. 
             <br/><br/>
-            Przyjmujemy dzieci do grup rozwojowych: trzy i czterolatki, pięciolatki, sześciolatki. Dzieci znajdują się pod opieką wykwalifikowanej kadry pedagogicznej. Jesteśmy otwarci na propozycje rodziców. 
-            <br/><br/>
-            ZAPRASZAMY DO NASZEGO PRZEDSZKOLA! 
+            Przyjmujemy dzieci do grup rozwojowych: trzy i czterolatki, pięciolatki, sześciolatki. Dzieci znajdują się pod opieką wykwalifikowanej kadry pedagogicznej. Jesteśmy otwarci na propozycje rodziców.
           </p>
         </div>
     );
