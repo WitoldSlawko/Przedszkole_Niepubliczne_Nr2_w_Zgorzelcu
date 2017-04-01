@@ -92,7 +92,7 @@ class App extends React.Component {
           </div>
         </aside>
       </main>
-      <footer>Copyright by Witold Sławko</footer>
+      <footer>&#9786;&#9786;&#9786; zapraszamy &#9786;&#9786;&#9786;</footer>
     </div>
     );
    }

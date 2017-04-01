@@ -169,9 +169,14 @@ span {
   margin: auto 0;
 }
 
+.nav_1 > a {
+  border-radius: 50%;
+}
+
 a {
   cursor: pointer;
   text-decoration: none;
+  padding: 2px 5px;
 }
 
 main {
@@ -238,9 +243,10 @@ aside {
   background: url(./images/basic_pictures/pn2_home.png);
   background-size: cover;
   background-repeat: no-repeat;
+  border: 3px solid saddlebrown;
 }
 
-.powitanie {
+.powitanie, .gallery_choosing {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -248,8 +254,10 @@ aside {
   height: 100%;
 }
 
-.powitanie > h1 {
+.powitanie > h1, .gallery_choosing > h1 {
   color: gold;
+  font-size: 3rem;
+  text-shadow: -5px 0 saddlebrown, 0 5px saddlebrown, 5px 0 saddlebrown, 0 -5px saddlebrown;
 }
 
 .kontakt, .galeria, .oferta, .wideoteka {
@@ -266,6 +274,13 @@ aside {
 
 .oferta {
   padding: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.oferta li {
+  margin-left: 2vw;
 }
 
 .wideoteka {
@@ -313,6 +328,7 @@ aside {
 .img {
   height: 120px;
   width: 20%;
+  border: 2px solid saddlebrown;
 }
 
 .big {
@@ -322,18 +338,11 @@ aside {
 .big:active {
   
 }
-/*
-.img:hover::before {
-  content: "Przytrzymaj by powiększyć";
-  height: 20%;
-  width: 50%;
-  text-align: center;
-  background-color: rgba(255,255,255, 0.5);
-  position: flex;
-  color: yellow;
-  z-index:0;
+
+.gallery_choosing > h1 {
+  
 }
-*/
+
 .img:active {
   transform: scale(5);
   z-index: 10000;
@@ -344,10 +353,20 @@ aside {
   justify-content: center;
   align-content: center;
   overflow: visible;
+  border: 5px solid saddlebrown;
 }
 
 .kontakt_info {
   padding: 10vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.kontakt_info > p {
+  margin: 20px 0;
+  font-size: 1.5rem;
 }
 
 iframe {
@@ -369,4 +388,5 @@ header, .nav_1, aside, footer {
 
 footer {
   text-align: center;
+  text-transform: uppercase;
 }
