@@ -103,8 +103,9 @@ class GalleryContent extends React.Component {
           {this.state.clicked6 ? <Link style={{ background: 'lightblue', color: 'darkred' }} onClick={this.handleClick6} to="gallery_6">Półkolonia</Link> : <Link onClick={this.handleClick6} to="gallery_6">Półkolonia</Link>}
           {this.props.children}
         </nav>
-        
-        <div className="presenter"></div>
+        <div className="gallery_choosing">
+          <h1>Wybierz galerię</h1>
+        </div>
       </div>
     );
   }

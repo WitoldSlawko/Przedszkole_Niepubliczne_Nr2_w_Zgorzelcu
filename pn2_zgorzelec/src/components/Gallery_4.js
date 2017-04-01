@@ -4,6 +4,7 @@ import LightBox_4 from './LightBox_4';
 import { Link, hashHistory } from 'react-router';
 
 class Gallery_4 extends React.Component {
+  /*
   constructor(props) {
     super();
     this.state = {
@@ -80,32 +81,23 @@ class Gallery_4 extends React.Component {
         clicked5: false,
         clicked6: true
        });
-    } 
+    }
+    */
   render() {
     return (
       <div className="galeria">
         <nav className="nav_2">
-          {this.state.clicked1 ? <Link style={{ background: 'lightblue', color: 'darkred' }} onClick={this.handleClick1} to="gallery_1"> >Występ przedszkolaków</Link> : <Link onClick={this.handleClick1} to="gallery_1">Występ przedszkolaków</Link>}
-          {this.state.clicked2 ? <Link style={{ background: 'lightblue', color: 'darkred' }} onClick={this.handleClick2} to="gallery_2">Występ w MDK</Link> : <Link onClick={this.handleClick2} to="gallery_2">Występ w MDK</Link>}
-          {this.state.clicked3 ? <Link style={{ background: 'lightblue', color: 'darkred' }} onClick={this.handleClick3} to="gallery_3">Jasełka w przedszkolu</Link> : <Link onClick={this.handleClick3} to="gallery_3">Jasełka w przedszkolu</Link>}
-          {this.state.clicked4 ? <Link style={{ background: 'lightblue', color: 'darkred' }} onClick={this.handleClick4} to="gallery_4">Jasełka w MDK</Link> :  <Link onClick={this.handleClick4} to="gallery_4">Jasełka w MDK</Link>}
-          {this.state.clicked5 ? <Link style={{ background: 'lightblue', color: 'darkred' }} onClick={this.handleClick5} to="gallery_5">Wycieczka</Link> : <Link onClick={this.handleClick5} to="gallery_5">Wycieczka</Link>}
-          {this.state.clicked6 ? <Link style={{ background: 'lightblue', color: 'darkred' }} onClick={this.handleClick6} to="gallery_6">Półkolonia</Link> : <Link onClick={this.handleClick6} to="gallery_6">Półkolonia</Link>}
+          <Link onClick={this.handleClick1} to="gallery_1">Występ przedszkolaków</Link>
+          <Link onClick={this.handleClick2} to="gallery_2">Występ w MDK</Link>
+          <Link onClick={this.handleClick3} to="gallery_3">Jasełka w przedszkolu</Link>
+          <Link style={{ background: 'black', color: 'gold' }} onClick={this.handleClick4} to="gallery_4">Jasełka w MDK</Link>
+          <Link onClick={this.handleClick5} to="gallery_5">Wycieczka</Link>
+          <Link onClick={this.handleClick6} to="gallery_6">Półkolonia</Link>
         </nav>
           <div className="photo_book"><LightBox_4 /> <PhotoBook_4 /></div>
-        <div className="presenter"></div>
       </div>
     );
   }
 }
 
 export default Gallery_4;
-
-/*
-
-          {this.state.clicked2 ? <div>Występ w MDK</div> : null}
-          {this.state.clicked3 ? <div>Jasełka w przedszkolu</div> : null}
-          {this.state.clicked4 ? <div>Jasełka w MDK</div> : null}
-          {this.state.clicked5 ? <div>Wyvieczka</div> : null}
-          {this.state.clicked6 ? <div>Półkolonia</div> : null}
-*/

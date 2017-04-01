@@ -14,13 +14,3 @@ class WelcomeContent extends React.Component {
 }
 
 export default WelcomeContent;
-
-/*
-render() {
-    return (
-      <div {...this.props}>
-        Witamy na stronie naszego Przedszkola !
-      </div>
-    );
-  }
-*/
