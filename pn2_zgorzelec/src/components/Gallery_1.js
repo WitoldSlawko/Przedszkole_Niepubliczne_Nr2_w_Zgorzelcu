@@ -87,7 +87,7 @@ class Gallery_1 extends React.Component {
     return (
       <div className="galeria">
         <nav className="nav_2">
-          <Link style={{ background: 'black', color: 'gold' }} onClick={this.handleClick1} to="gallery_1">Występ przedszkolaków</Link>
+          <Link style={{ background: 'saddlebrown', color: 'peachpuff' }} onClick={this.handleClick1} to="gallery_1">Występ przedszkolaków</Link>
           <Link onClick={this.handleClick2} to="gallery_2">Występ w MDK</Link>
           <Link onClick={this.handleClick3} to="gallery_3">Jasełka w przedszkolu</Link>
           <Link onClick={this.handleClick4} to="gallery_4">Jasełka w MDK</Link>

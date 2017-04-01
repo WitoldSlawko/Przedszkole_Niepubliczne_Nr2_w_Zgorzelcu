@@ -13,7 +13,8 @@
 
 body{
   font-family: 'Lato', sans-serif;
-  background-color: gold;
+  /*background-color: gold;*/
+  background-color: peachpuff;
 }
 
 div.foo{
@@ -117,7 +118,8 @@ header h1 {
   background-image: url(./images/basic_pictures/non-profit-kids.png);
   background-size: 20% 100%;
   background-repeat: repeat;
-  background-color: gold;
+  /*background-color: gold;*/
+  background-color: peachpuff;
   height: 10vh;
   display: flex;
   justify-content: center;
@@ -155,6 +157,8 @@ span {
 
 .nav_2 a {
   font-size: 1em;
+  color: saddlebrown;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 /*
 .nav_2 {
@@ -170,13 +174,16 @@ span {
 }
 
 .nav_1 > a {
+  color: saddlebrown;
   border-radius: 50%;
+  border: 1px solid saddlebrown;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 a {
   cursor: pointer;
   text-decoration: none;
-  padding: 2px 5px;
+  padding: 3px 5px;
 }
 
 main {
@@ -383,7 +390,8 @@ footer {
 }
 
 header, .nav_1, aside, footer {
-  background-color: gold;
+  /*background-color: gold;*/
+  background-color: peachpuff;
 }
 
 footer {

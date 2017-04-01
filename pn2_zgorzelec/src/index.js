@@ -66,10 +66,10 @@ class App extends React.Component {
      <div className="container">
       <Header />
       <nav className="nav_1">
-        {this.state.clicked1 ? <Link onClick={this.handleClick1} style={{ background: 'black', color: 'gold' }} to="offercontent">Oferta</Link> : <Link onClick={this.handleClick1} to="offercontent">Oferta</Link>}
-        {this.state.clicked2 ? <Link onClick={this.handleClick2} style={{ background: 'black', color: 'gold' }} to="gallerycontent">Galeria</Link> : <Link onClick={this.handleClick2} to="gallerycontent">Galeria</Link>}
-        {this.state.clicked3 ? <Link onClick={this.handleClick3} style={{ background: 'black', color: 'gold' }} to="moviescontent">Wideoteka</Link> : <Link onClick={this.handleClick3} to="moviescontent">Wideoteka</Link>}
-        {this.state.clicked4 ? <Link onClick={this.handleClick4} style={{ background: 'black', color: 'gold' }} to="contactcontent">Kontakt</Link> : <Link onClick={this.handleClick4} to="contactcontent">Kontakt</Link>}
+        {this.state.clicked1 ? <Link onClick={this.handleClick1} style={{ background: 'saddlebrown', color: 'peachpuff' }} to="offercontent">Oferta</Link> : <Link onClick={this.handleClick1} to="offercontent">Oferta</Link>}
+        {this.state.clicked2 ? <Link onClick={this.handleClick2} style={{ background: 'saddlebrown', color: 'peachpuff' }} to="gallerycontent">Galeria</Link> : <Link onClick={this.handleClick2} to="gallerycontent">Galeria</Link>}
+        {this.state.clicked3 ? <Link onClick={this.handleClick3} style={{ background: 'saddlebrown', color: 'peachpuff' }} to="moviescontent">Wideoteka</Link> : <Link onClick={this.handleClick3} to="moviescontent">Wideoteka</Link>}
+        {this.state.clicked4 ? <Link onClick={this.handleClick4} style={{ background: 'saddlebrown', color: 'peachpuff' }} to="contactcontent">Kontakt</Link> : <Link onClick={this.handleClick4} to="contactcontent">Kontakt</Link>}
       </nav>
       <main>
         <aside className="left_as">
