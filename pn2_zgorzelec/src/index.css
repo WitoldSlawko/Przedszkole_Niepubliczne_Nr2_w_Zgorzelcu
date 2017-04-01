@@ -1,5 +1,5 @@
 * {
-    border: 1px dotted black;
+    /*border: 1px dotted black;*/
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -13,6 +13,7 @@
 
 body{
   font-family: 'Lato', sans-serif;
+  background-color: gold;
 }
 
 div.foo{
@@ -113,7 +114,7 @@ header {
 header h1 {
   font-size: 2rem;
   text-align: center;
-  background-image: url(images/non-profit-kids.png);
+  background-image: url(./images/basic_pictures/non-profit-kids.png);
   background-size: 20% 100%;
   background-repeat: repeat;
   background-color: gold;
@@ -170,6 +171,7 @@ span {
 
 a {
   cursor: pointer;
+  text-decoration: none;
 }
 
 main {
@@ -178,6 +180,50 @@ main {
 
 aside {
   width: 10vw;
+}
+
+.kid_frame {
+  height: 50%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.kid_topleft {
+  background-image: url(images/basic_pictures/Cute-Kids-PNG-Transparent-Image.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -5px 0;
+  height: 100%;
+  width: 60%;
+}
+
+.kid_downleft {
+  background-image: url(images/basic_pictures/Cute-Kids-PNG-Transparent-Image.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -85px 0;
+  height: 100%;
+  width: 85%;
+}
+
+.kid_topright {
+  background-image: url(images/basic_pictures/Cute-Kids-PNG-Transparent-Image.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -200px 0;
+  height: 100%;
+  width: 65%;
+}
+
+.kid_downright {
+  background-image: url(images/basic_pictures/Cute-Kids-PNG-Transparent-Image.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -285px 0;
+  height: 100%;
+  width: 65%;
 }
 
 .selected {
@@ -189,16 +235,49 @@ aside {
   width: 80vw;
   height: 80vh;
   /*background-image: url(../src/img/pn2_home.png);*/
-  background: url(../src/images/pn2_home.png);
+  background: url(./images/basic_pictures/pn2_home.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.kontakt, .galeria {
+.powitanie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.powitanie > h1 {
+  color: gold;
+}
+
+.kontakt, .galeria, .oferta, .wideoteka {
   /*display: flex;*/
   background-color: rgba(255,255,255, 0.5);
   width: 100%;
   height: 100%;
+}
+
+.kontakt {
+  display: flex;
+  justify-content: center;
+}
+
+.oferta {
+  padding: 5vh;
+}
+
+.wideoteka {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.wideoteka > iframe {
+  width: 35vw;
+  height: 30vh;
+  margin-top: 5vh;
 }
 
 .photo_series {
@@ -268,6 +347,7 @@ aside {
 }
 
 .kontakt_info {
+  padding: 10vh;
 }
 
 iframe {
@@ -275,6 +355,18 @@ iframe {
   height: 50vh;
 }
 
+.map_iframe {
+  margin-top: 10vh;
+}
+
 footer {
   height: 5vh;
+}
+
+header, .nav_1, aside, footer {
+  background-color: gold;
+}
+
+footer {
+  text-align: center;
 }

@@ -1,12 +1,11 @@
 import React from 'react';
-
+import { Link, hashHistory } from 'react-router'
 import PhotoBook_1 from './PhotoBook_1';
 import PhotoBook_2 from './PhotoBook_2';
 import PhotoBook_3 from './PhotoBook_3';
 import PhotoBook_4 from './PhotoBook_4';
 import PhotoBook_5 from './PhotoBook_5';
 import PhotoBook_6 from './PhotoBook_6';
-
 import LightBox_1 from './LightBox_1';
 import LightBox_2 from './LightBox_2';
 import LightBox_3 from './LightBox_3';
@@ -96,20 +95,14 @@ class GalleryContent extends React.Component {
     return (
       <div className="galeria">
         <nav className="nav_2">
-          {this.state.clicked1 ? <a style={{ background: 'lightblue', color: 'darkred' }} onClick={this.handleClick1}>Występ przedszkolaków</a> : <a onClick={this.handleClick1}>Występ przedszkolaków</a>}
-          {this.state.clicked2 ? <a style={{ background: 'lightblue', color: 'darkred' }} onClick={this.handleClick2}>Występ w MDK</a> : <a onClick={this.handleClick2}>Występ w MDK</a>}
-          {this.state.clicked3 ? <a style={{ background: 'lightblue', color: 'darkred' }} onClick={this.handleClick3}>Jasełka w przedszkolu</a> : <a onClick={this.handleClick3}>Jasełka w przedszkolu</a>}
-          {this.state.clicked4 ? <a style={{ background: 'lightblue', color: 'darkred' }} onClick={this.handleClick4}>Jasełka w MDK</a> :  <a onClick={this.handleClick4}>Jasełka w MDK</a>}
-          {this.state.clicked5 ? <a style={{ background: 'lightblue', color: 'darkred' }} onClick={this.handleClick5}>Wycieczka</a> : <a onClick={this.handleClick5}>Wycieczka</a>}
-          {this.state.clicked6 ? <a style={{ background: 'lightblue', color: 'darkred' }} onClick={this.handleClick6}>Półkolonia</a> : <a onClick={this.handleClick6}>Półkolonia</a>}
+          {this.state.clicked1 ? <Link style={{ background: 'lightblue', color: 'darkred' }} onClick={this.handleClick1} to="gallery_1"> >Występ przedszkolaków</Link> : <Link onClick={this.handleClick1} to="gallery_1">Występ przedszkolaków</Link>}
+          {this.state.clicked2 ? <Link style={{ background: 'lightblue', color: 'darkred' }} onClick={this.handleClick2} to="gallery_2">Występ w MDK</Link> : <Link onClick={this.handleClick2} to="gallery_2">Występ w MDK</Link>}
+          {this.state.clicked3 ? <Link style={{ background: 'lightblue', color: 'darkred' }} onClick={this.handleClick3} to="gallery_3">Jasełka w przedszkolu</Link> : <Link onClick={this.handleClick3} to="gallery_3">Jasełka w przedszkolu</Link>}
+          {this.state.clicked4 ? <Link style={{ background: 'lightblue', color: 'darkred' }} onClick={this.handleClick4} to="gallery_4">Jasełka w MDK</Link> : <Link onClick={this.handleClick4} to="gallery_4">Jasełka w MDK</Link>}
+          {this.state.clicked5 ? <Link style={{ background: 'lightblue', color: 'darkred' }} onClick={this.handleClick5} to="gallery_5">Wycieczka</Link> : <Link onClick={this.handleClick5} to="gallery_5">Wycieczka</Link>}
+          {this.state.clicked6 ? <Link style={{ background: 'lightblue', color: 'darkred' }} onClick={this.handleClick6} to="gallery_6">Półkolonia</Link> : <Link onClick={this.handleClick6} to="gallery_6">Półkolonia</Link>}
+          {this.props.children}
         </nav>
-        
-          {this.state.clicked1 ? <div className="photo_book"><LightBox_1 /> <PhotoBook_1 /></div> : null}
-          {this.state.clicked2 ? <div className="photo_book"><LightBox_2 /> <PhotoBook_2 /></div> : null}
-          {this.state.clicked3 ? <div className="photo_book"><LightBox_3 /> <PhotoBook_3 /></div> : null}
-          {this.state.clicked4 ? <div className="photo_book"><LightBox_4 /> <PhotoBook_4 /></div> : null}
-          {this.state.clicked5 ? <div className="photo_book"><LightBox_5 /> <PhotoBook_5 /></div> : null}
-          {this.state.clicked6 ? <div className="photo_book"><LightBox_6 /> <PhotoBook_6 /></div> : null}
         
         <div className="presenter"></div>
       </div>
@@ -118,12 +111,3 @@ class GalleryContent extends React.Component {
 }
 
 export default GalleryContent;
-
-/*
-
-          {this.state.clicked2 ? <div>Występ w MDK</div> : null}
-          {this.state.clicked3 ? <div>Jasełka w przedszkolu</div> : null}
-          {this.state.clicked4 ? <div>Jasełka w MDK</div> : null}
-          {this.state.clicked5 ? <div>Wyvieczka</div> : null}
-          {this.state.clicked6 ? <div>Półkolonia</div> : null}
-*/

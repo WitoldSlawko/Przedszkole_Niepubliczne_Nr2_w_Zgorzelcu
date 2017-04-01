@@ -94,7 +94,7 @@ export default class LightBox_1 extends Component {
                     type="button"
                     onClick={() => this.setState({ isOpen: true })}
                 >
-                    Open Lightbox
+                    Otwórz galerię: Występ przedszkolaków
                 </button>
  
                 {isOpen &&
