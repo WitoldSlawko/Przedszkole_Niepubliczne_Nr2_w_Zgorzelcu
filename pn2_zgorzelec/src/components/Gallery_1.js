@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Component} from 'react';
 import PhotoBook_1 from './PhotoBook_1';
 import LightBox_1 from './LightBox_1';
 import { Link, hashHistory } from 'react-router';
 
-class Gallery_1 extends React.Component {
+class Gallery_1 extends Component {
   /*
   constructor(props) {
     super();

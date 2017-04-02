@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import { Router, Route, IndexRoute, Link, hashHistory } from 'react-router'
-import Header from './components/Header';
+import { Router, Route, IndexRoute, hashHistory } from 'react-router'
+
 import WelcomeContent from './components/WelcomeContent';
 import OfferContent from './components/OfferContent';
 import GalleryContent from './components/GalleryContent';
@@ -14,6 +14,7 @@ import Gallery_3 from './components/Gallery_3';
 import Gallery_4 from './components/Gallery_4';
 import Gallery_5 from './components/Gallery_5';
 import Gallery_6 from './components/Gallery_6';
+import Main from './components/Main';
 
 class App extends React.Component {
   constructor(props) {
@@ -63,37 +64,15 @@ class App extends React.Component {
    }
    render() {
     return (
-     <div className="container">
-      <Header />
-      <nav className="nav_1">
-        {this.state.clicked1 ? <Link onClick={this.handleClick1} style={{ background: 'saddlebrown', color: 'peachpuff' }} to="offercontent">Oferta</Link> : <Link onClick={this.handleClick1} to="offercontent">Oferta</Link>}
-        {this.state.clicked2 ? <Link onClick={this.handleClick2} style={{ background: 'saddlebrown', color: 'peachpuff' }} to="gallerycontent">Galeria</Link> : <Link onClick={this.handleClick2} to="gallerycontent">Galeria</Link>}
-        {this.state.clicked3 ? <Link onClick={this.handleClick3} style={{ background: 'saddlebrown', color: 'peachpuff' }} to="moviescontent">Wideoteka</Link> : <Link onClick={this.handleClick3} to="moviescontent">Wideoteka</Link>}
-        {this.state.clicked4 ? <Link onClick={this.handleClick4} style={{ background: 'saddlebrown', color: 'peachpuff' }} to="contactcontent">Kontakt</Link> : <Link onClick={this.handleClick4} to="contactcontent">Kontakt</Link>}
-      </nav>
-      <main>
-        <aside className="left_as">
-          <div className="kid_frame">
-            <div className="kid_topleft"></div>
-          </div>
-          <div className="kid_frame">
-            <div className="kid_downleft"></div>
-          </div>
-        </aside>
-        <div className="content">
-          {this.props.children}
-        </div>
-        <aside className="right_as">
-          <div className="kid_frame">
-            <div className="kid_topright"></div>
-          </div>
-          <div className="kid_frame">
-            <div className="kid_downright"></div>
-          </div>
-        </aside>
-      </main>
-      <footer>&#9786;&#9786;&#9786; zapraszamy &#9786;&#9786;&#9786;</footer>
-    </div>
+     <Main textToRender={this.props.children} 
+			 		click1={this.state.clicked1}
+			 		click2={this.state.clicked2}
+			 		click3={this.state.clicked3} 
+			 		click4={this.state.clicked4}
+			 		handleClick1={this.handleClick1}
+			 		handleClick2={this.handleClick2}
+			 		handleClick3={this.handleClick3}
+			 		handleClick4={this.handleClick4}/>
     );
    }
 };

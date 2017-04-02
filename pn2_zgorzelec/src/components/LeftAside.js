@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, hashHistory } from 'react-router'
+//import { Link, hashHistory } from 'react-router'
 /*
 import PhotoBook_1 from './PhotoBook_1';
 import PhotoBook_2 from './PhotoBook_2';
@@ -15,7 +15,7 @@ import LightBox_5 from './LightBox_5';
 import LightBox_6 from './LightBox_6';
 */
 
-class GalleryContent extends React.Component {
+class LeftAside extends React.Component {
 	/*
   constructor(props) {
     super();
@@ -97,25 +97,19 @@ class GalleryContent extends React.Component {
 		*/
   render() {
     return (
-      <div className="galeria">
-        <nav className="nav_2">
-          <Link onClick={this.handleClick1} to="gallery_1">Występ przedszkolaków</Link>
-          <Link onClick={this.handleClick2} to="gallery_2">Występ w MDK</Link>
-          <Link onClick={this.handleClick3} to="gallery_3">Jasełka w przedszkolu</Link>
-          <Link onClick={this.handleClick4} to="gallery_4">Jasełka w MDK</Link>
-          <Link onClick={this.handleClick5} to="gallery_5">Wycieczka</Link>
-          <Link onClick={this.handleClick6} to="gallery_6">Półkolonia</Link>
-          {this.props.children}
-        </nav>
-        <div className="gallery_choosing">
-          <h1>Wybierz galerię</h1>
-        </div>
-      </div>
+      <aside className="left_as">
+				<div className="kid_frame">
+					<div className="kid_topleft"></div>
+				</div>
+				<div className="kid_frame">
+					<div className="kid_downleft"></div>
+				</div>
+      </aside>
     );
   }
 }
 
-export default GalleryContent;
+export default LeftAside;
 
 /*{this.state.clicked1 ? <Link style={{ background: 'lightblue', color: 'darkred' }} onClick={this.handleClick1} to="gallery_1"> >Występ przedszkolaków</Link> : <Link onClick={this.handleClick1} to="gallery_1">Występ przedszkolaków</Link>}
           {this.state.clicked2 ? <Link style={{ background: 'lightblue', color: 'darkred' }} onClick={this.handleClick2} to="gallery_2">Występ w MDK</Link> : <Link onClick={this.handleClick2} to="gallery_2">Występ w MDK</Link>}
