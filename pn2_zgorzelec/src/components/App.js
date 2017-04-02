@@ -1,21 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import { Router, Route, IndexRoute, hashHistory } from 'react-router'
-import App from './components/App'
-import WelcomeContent from './components/WelcomeContent';
-import OfferContent from './components/OfferContent';
-import GalleryContent from './components/GalleryContent';
-import MoviesContent from './components/MoviesContent';
-import ContactContent from './components/ContactContent';
-import Gallery_1 from './components/Gallery_1';
-import Gallery_2 from './components/Gallery_2';
-import Gallery_3 from './components/Gallery_3';
-import Gallery_4 from './components/Gallery_4';
-import Gallery_5 from './components/Gallery_5';
-import Gallery_6 from './components/Gallery_6';
-//import Main from './components/Main';
 /*
+import WelcomeContent from './WelcomeContent';
+import OfferContent from './OfferContent';
+import GalleryContent from './GalleryContent';
+import MoviesContent from './MoviesContent';
+import ContactContent from './ContactContent';
+import Gallery_1 from './Gallery_1';
+import Gallery_2 from './Gallery_2';
+import Gallery_3 from './Gallery_3';
+import Gallery_4 from './Gallery_4';
+import Gallery_5 from './Gallery_5';
+import Gallery_6 from './Gallery_6';
+*/
+import Main from './Main';
+
 class App extends React.Component {
   constructor(props) {
     super();
@@ -76,8 +76,10 @@ class App extends React.Component {
     );
    }
 };
-*/
-ReactDOM.render((
+
+export default App;
+
+/*ReactDOM.render((
   <Router history={hashHistory}>
     <Route path="/" component={App}>
       <IndexRoute component={WelcomeContent} />
@@ -94,3 +96,4 @@ ReactDOM.render((
     </Route>
   </Router>
 ), document.querySelector('[data-react-application]'));
+*/
