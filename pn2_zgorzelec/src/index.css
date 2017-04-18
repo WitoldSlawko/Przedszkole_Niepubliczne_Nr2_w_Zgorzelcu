@@ -462,6 +462,9 @@ footer {
 	.map_iframe {
 		height: 50%;
 	}
+	.img:active {
+  	transform: scale(4);
+	}
 }
 
 @media (max-width: 600px){
@@ -470,6 +473,9 @@ footer {
 	}
 	header h1 {
 		background-size: 40% 100%;
+	}
+	.img:active {
+  	transform: scale(3);
 	}
 }
 
@@ -480,6 +486,9 @@ footer {
 	header h1 {
 		background-size: 50% 100%;
 	}
+	.img:active {
+  	transform: scale(2);
+	}
 }
 
 @media (max-width: 400px){
@@ -488,5 +497,8 @@ footer {
 	}
 	header h1 {
 		background-size: 60% 100%;
+	}
+	.img:active {
+  	transform: scale(1.5);
 	}
 }
