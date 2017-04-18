@@ -16,7 +16,7 @@ body{
   /*background-color: gold;*/
   background-color: peachpuff;
 }
-
+/*
 div.foo{
   width: 90%;
   text-align: center;
@@ -87,7 +87,7 @@ div.foo{
 .space {
   width: 2vw;
 }
-
+*/
 body {
 /*
     background-image: url(../src/img/pn2_home.png);
@@ -110,6 +110,10 @@ header {
   background-repeat: no-repeat;
   */
   height: 10vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
 }
 
 header h1 {
@@ -121,10 +125,15 @@ header h1 {
   /*background-color: gold;*/
   background-color: peachpuff;
   height: 10vh;
-  display: flex;
-  justify-content: center;
-  align-content: center;
   text-align: center;
+	width: 100%;
+	text-transform: uppercase;
+	color: saddlebrown;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
 }
 
 span {
@@ -135,22 +144,22 @@ span {
 
 .nav_1, .nav_2 {
   display: flex;
-  justify-content: space-around;
   /*width: 70vh;*/
   /*height: 5vh;*/
   margin: 0 auto;
   display: flex;
   text-align: center;
+	justify-content: center;
 }
 
 .nav_1 {
-  width: 70vh;
-  height: 5vh;
+  width: 100%;
+  min-height: 5vh;
 }
 
 .nav_2 {
   width: 100%;
-  height: 3vh;
+  min-height: 3vh;
   display: flex;
   justify-content: space-around;
 }
@@ -159,6 +168,9 @@ span {
   font-size: 1em;
   color: peachpuff;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 /*
 .nav_2 {
@@ -171,6 +183,7 @@ span {
   align-content: center;
   text-align: center;
   margin: auto 0;
+	margin-left: 5%;
 }
 
 .nav_1 > a {
@@ -203,39 +216,43 @@ aside {
 }
 
 .kid_topleft {
-  background-image: url(images/basic_pictures/Cute-Kids-PNG-Transparent-Image.png);
-  background-size: cover;
+  background-image: url(images/basic_pictures/kid1.png);
+	display: flex;
+	background-position: center;
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: -5px 0;
-  height: 100%;
-  width: 60%;
+	height: 100%;
+	width: 100%;
 }
 
 .kid_downleft {
-  background-image: url(images/basic_pictures/Cute-Kids-PNG-Transparent-Image.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: -85px 0;
+	display: flex;
+	background-position: center;
+  background-image: url(images/basic_pictures/kid2.png);
+  background-size: contain;
+	background-repeat: no-repeat;
   height: 100%;
-  width: 85%;
+  width: 100%;
 }
 
 .kid_topright {
-  background-image: url(images/basic_pictures/Cute-Kids-PNG-Transparent-Image.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: -200px 0;
+  display: flex;
+	background-position: center;
+  background-image: url(images/basic_pictures/kid3.png);
+  background-size: contain;
+	background-repeat: no-repeat;
   height: 100%;
-  width: 65%;
+  width: 100%;
 }
 
 .kid_downright {
-  background-image: url(images/basic_pictures/Cute-Kids-PNG-Transparent-Image.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: -285px 0;
+  display: flex;
+	background-position: center;
+  background-image: url(images/basic_pictures/kid4.png);
+  background-size: contain;
+	background-repeat: no-repeat;
   height: 100%;
-  width: 65%;
+  width: 100%;
 }
 
 .selected {
@@ -247,6 +264,8 @@ aside {
   width: 80vw;
   height: 80vh;
   /*background-image: url(../src/img/pn2_home.png);*/
+	display: flex;
+	flex-direction: column;
   background: url(./images/basic_pictures/pn2_home.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -264,11 +283,13 @@ aside {
 .powitanie > h1, .gallery_choosing > h1 {
   color: gold;
   font-size: 3rem;
+	text-align: center;
   text-shadow: -5px 0 saddlebrown, 0 5px saddlebrown, 5px 0 saddlebrown, 0 -5px saddlebrown;
 }
 
 .kontakt, .galeria, .oferta, .wideoteka {
-  /*display: flex;*/
+  display: flex;
+	flex-direction: column;
   background-color: rgba(255,255,255, 0.5);
   width: 100%;
   height: 100%;
@@ -276,7 +297,9 @@ aside {
 
 .kontakt {
   display: flex;
-  justify-content: center;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
 }
 
 .oferta {
@@ -294,6 +317,7 @@ aside {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+	align-content: space-around;
 }
 
 .wideoteka > iframe {
@@ -323,6 +347,16 @@ aside {
   justify-content: space-around;
   overflow-y: scroll;
   flex-wrap: wrap;
+}
+
+.photo_book div:first-child {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.photo_book button {
+	position: fixed;
 }
 
 .photos {
@@ -364,7 +398,8 @@ aside {
 }
 
 .kontakt_info {
-  padding: 10vh;
+  padding: 0;
+	margin: 0;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -377,12 +412,17 @@ aside {
 }
 
 iframe {
-  width: 70vh;
-  height: 50vh;
+	display: flex;
+  width: 70%;
+  height: 50%;
+}
+
+.iframe {
+	display: flex;
 }
 
 .map_iframe {
-  margin-top: 10vh;
+	display: flex;
 }
 
 footer {
@@ -397,4 +437,56 @@ header, .nav_1, aside, footer {
 footer {
   text-align: center;
   text-transform: uppercase;
+}
+
+@media (min-width: 801px){
+	html {
+		font-size: 16px;
+	}
+	.map_iframe {
+		height: 80%;
+	}
+}
+
+@media (max-width: 800px){
+	html {
+		font-size: 14px;
+	}
+	.kontakt {
+		flex-direction: column;
+	}
+	header h1 {
+		background-size: 30% 100%;
+		background-position: center;
+	}
+	.map_iframe {
+		height: 50%;
+	}
+}
+
+@media (max-width: 600px){
+	html {
+		font-size: 12px;
+	}
+	header h1 {
+		background-size: 40% 100%;
+	}
+}
+
+@media (max-width: 500px){
+	html {
+		font-size: 10px;
+	}
+	header h1 {
+		background-size: 50% 100%;
+	}
+}
+
+@media (max-width: 400px){
+	html {
+		font-size: 8px;
+	}
+	header h1 {
+		background-size: 60% 100%;
+	}
 }

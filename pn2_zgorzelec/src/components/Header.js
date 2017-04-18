@@ -4,7 +4,17 @@ class Header extends React.Component {
   render () {
     return (
       <header>
-        <h1>
+					<h1>
+						przedszkole niepubliczne nr 2 w zgorzelcu
+					</h1>
+      </header>
+    )
+  }
+}
+
+export default Header;
+
+/*<!--
           <div className="foo">
             <span className="letter" data-letter="P">P</span>
             <span className="letter" data-letter="R">R</span>
@@ -46,11 +56,6 @@ class Header extends React.Component {
             <span className="letter" data-letter="L">L</span>
             <span className="letter" data-letter="C">C</span>
             <span className="letter" data-letter="U">U</span>
-          </div>
-        </h1>
-      </header>
-    )
-  }
-}
+          </div> -->
 
-export default Header;
+*/
