@@ -4,85 +4,7 @@ import LightBox_3 from './LightBox_3';
 import { Link, hashHistory } from 'react-router';
 
 class Gallery_3 extends React.Component {
-  /*
-  constructor(props) {
-    super();
-    this.state = {
-      clicked1: false,
-      clicked2: false,
-      clicked3: false,
-      clicked4: false,
-      clicked5: false,
-      clicked6: false
-    };
-    this.handleClick1 = this.handleClick1.bind(this);
-    this.handleClick2 = this.handleClick2.bind(this);
-    this.handleClick3 = this.handleClick3.bind(this);
-    this.handleClick4 = this.handleClick4.bind(this);
-    this.handleClick5 = this.handleClick5.bind(this);
-    this.handleClick6 = this.handleClick6.bind(this);
-    }
-    handleClick1() {
-      this.setState({
-        clicked1: true,
-        clicked2: false,
-        clicked3: false,
-        clicked4: false,
-        clicked5: false,
-        clicked6: false
-      });
-    }
-    handleClick2() {
-      this.setState({
-        clicked1: false,
-        clicked2: true,
-        clicked3: false,
-        clicked4: false,
-        clicked5: false,
-        clicked6: false
-      });
-    }
-    handleClick3() {
-      this.setState({
-        clicked1: false,
-        clicked2: false,
-        clicked3: true,
-        clicked4: false,
-        clicked5: false,
-        clicked6: false
-      });
-    }
-    handleClick4() {
-     this.setState({
-        clicked1: false,
-        clicked2: false,
-        clicked3: false,
-        clicked4: true,
-        clicked5: false,
-        clicked6: false
-     });
-    }
-    handleClick5() {
-     this.setState({
-        clicked1: false,
-        clicked2: false,
-        clicked3: false,
-        clicked4: false,
-        clicked5: true,
-        clicked6: false
-       });
-    }
-    handleClick6() {
-     this.setState({
-        clicked1: false,
-        clicked2: false,
-        clicked3: false,
-        clicked4: false,
-        clicked5: false,
-        clicked6: true
-       });
-    }
-  */
+  
   render() {
     return (
       <div className="galeria">
@@ -101,7 +23,3 @@ class Gallery_3 extends React.Component {
 }
 
 export default Gallery_3;
-
-/*
-
-*/

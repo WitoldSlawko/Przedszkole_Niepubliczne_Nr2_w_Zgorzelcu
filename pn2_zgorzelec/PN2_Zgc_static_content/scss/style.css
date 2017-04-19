@@ -1,0 +1,89 @@
+/* line 9, /home/wiciu/git_github/Przedszkole_Niepubliczne_Nr2_w_Zgorzelcu/scss/style.scss */
+* {
+  box-sizing: border-box; }
+
+/* line 14, /home/wiciu/git_github/Przedszkole_Niepubliczne_Nr2_w_Zgorzelcu/scss/style.scss */
+.grid-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; }
+
+/* line 20, /home/wiciu/git_github/Przedszkole_Niepubliczne_Nr2_w_Zgorzelcu/scss/style.scss */
+.row:before, .row:after {
+  content: " ";
+  display: table;
+  clear: both; }
+
+/*
+.row {
+    min-height: 100px;
+}
+*/
+@media only screen and (orientation: landscape) {
+  /* line 33, /home/wiciu/git_github/Przedszkole_Niepubliczne_Nr2_w_Zgorzelcu/scss/style.scss */
+  [class*='col-'] {
+    float: left;
+    min-height: 1px;
+    /* $size: $procent*(1/$max);
+    width: $size; */
+    padding: 10px;
+    border: 1px dotted black; } }
+
+/* line 45, /home/wiciu/git_github/Przedszkole_Niepubliczne_Nr2_w_Zgorzelcu/scss/style.scss */
+.col-1 {
+  width: 8.33333%; }
+
+/* line 45, /home/wiciu/git_github/Przedszkole_Niepubliczne_Nr2_w_Zgorzelcu/scss/style.scss */
+.col-2 {
+  width: 16.66667%; }
+
+/* line 45, /home/wiciu/git_github/Przedszkole_Niepubliczne_Nr2_w_Zgorzelcu/scss/style.scss */
+.col-3 {
+  width: 25%; }
+
+/* line 45, /home/wiciu/git_github/Przedszkole_Niepubliczne_Nr2_w_Zgorzelcu/scss/style.scss */
+.col-4 {
+  width: 33.33333%; }
+
+/* line 45, /home/wiciu/git_github/Przedszkole_Niepubliczne_Nr2_w_Zgorzelcu/scss/style.scss */
+.col-5 {
+  width: 41.66667%; }
+
+/* line 45, /home/wiciu/git_github/Przedszkole_Niepubliczne_Nr2_w_Zgorzelcu/scss/style.scss */
+.col-6 {
+  width: 50%; }
+
+/* line 45, /home/wiciu/git_github/Przedszkole_Niepubliczne_Nr2_w_Zgorzelcu/scss/style.scss */
+.col-7 {
+  width: 58.33333%; }
+
+/* line 45, /home/wiciu/git_github/Przedszkole_Niepubliczne_Nr2_w_Zgorzelcu/scss/style.scss */
+.col-8 {
+  width: 66.66667%; }
+
+/* line 45, /home/wiciu/git_github/Przedszkole_Niepubliczne_Nr2_w_Zgorzelcu/scss/style.scss */
+.col-9 {
+  width: 75%; }
+
+/* line 45, /home/wiciu/git_github/Przedszkole_Niepubliczne_Nr2_w_Zgorzelcu/scss/style.scss */
+.col-10 {
+  width: 83.33333%; }
+
+/* line 45, /home/wiciu/git_github/Przedszkole_Niepubliczne_Nr2_w_Zgorzelcu/scss/style.scss */
+.col-11 {
+  width: 91.66667%; }
+
+/* line 45, /home/wiciu/git_github/Przedszkole_Niepubliczne_Nr2_w_Zgorzelcu/scss/style.scss */
+.col-12 {
+  width: 100%; }
+
+/*
+@media only screen and (max-width: 600px) and (orientation: portrait){
+  [class*='col-'] {
+    float: none;
+    width: 100%;
+  }
+}
+*/
+
+/*# sourceMappingURL=style.css.map */

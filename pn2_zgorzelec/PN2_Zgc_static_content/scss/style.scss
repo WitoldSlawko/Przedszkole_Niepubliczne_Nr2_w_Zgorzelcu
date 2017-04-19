@@ -1,0 +1,62 @@
+$max: 12;
+$procent: 100%;
+
+@function rel($licznik,$mianownik){
+    $wynik_procent: ($licznik/$mianownik)*100%;
+    @return $wynik_procent;
+}
+
+* {
+  //border: 1px dotted black;
+  box-sizing: border-box;
+}
+
+.grid-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row:before, .row:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+/*
+.row {
+    min-height: 100px;
+}
+*/
+
+@media only screen /*and (min-width: 600px)*/ and (orientation: landscape) {
+  [class*='col-']{
+    float: left;
+    min-height: 1px;
+    /* $size: $procent*(1/$max);
+    width: $size; */
+    padding: 10px;
+    border: 1px dotted black;
+  }
+}
+
+@for $i from 1 through $max {
+  $size: $procent*($i/$max);
+  .col-#{$i} {
+    width: $size;
+  }
+}
+
+header {
+   
+}
+
+
+/*
+@media only screen and (max-width: 600px) and (orientation: portrait){
+  [class*='col-'] {
+    float: none;
+    width: 100%;
+  }
+}
+*/

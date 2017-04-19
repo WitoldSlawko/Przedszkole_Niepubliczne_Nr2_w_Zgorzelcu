@@ -15,7 +15,6 @@ let Image_2 = function statelessFunctionComponentClass(props) {
 };
 
   return (
-    //<img src={require('../images/Wystep_przedszkolakow/' + props.source)} style={style} />
     <div className='img' style={sectionStyle}></div>
   );
 };
