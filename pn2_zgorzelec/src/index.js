@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './css/style.css';
+import './css/reset.css';
 import { Router, Route, IndexRoute, hashHistory } from 'react-router'
 import App from './components/App'
 import WelcomeContent from './components/WelcomeContent';

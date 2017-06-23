@@ -1,0 +1,388 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:900);
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: black;
+  font-weight: bold;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: peachpuff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 2rem;
+  text-align: center;
+  background-image: url(./images/basic_pictures/non-profit-kids.png);
+  background-size: 20% 100%;
+  background-repeat: repeat;
+  background-color: peachpuff;
+  height: 10vh;
+  text-align: center;
+  width: 100%;
+  text-transform: uppercase;
+  color: saddlebrown;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+span {
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+.nav_1, .nav_2 {
+  display: flex;
+  margin: 0 auto;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.nav_1 {
+  width: 100%;
+  min-height: 5vh;
+}
+
+.nav_2 {
+  width: 100%;
+  min-height: 3vh;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav_2 a {
+  font-size: 1em;
+  color: peachpuff;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav_1 * {
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  margin: auto 0;
+  margin-left: 5%;
+}
+
+.nav_1 > a {
+  color: peachpuff;
+  border-radius: 50%;
+  border: 1px solid saddlebrown;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  padding: 3px 5px;
+}
+
+main {
+  display: flex;
+}
+
+aside {
+  width: 10vw;
+}
+
+.kid_frame {
+  height: 50%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.kid_downleft, .kid_topright, .kid_downright, .kid_topleft {
+  display: flex;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.kid_topleft {
+  background-image: url(images/basic_pictures/kid1.png);
+}
+
+.kid_downleft {
+  background-image: url(images/basic_pictures/kid2.png);
+}
+
+.kid_topright {
+  background-image: url(images/basic_pictures/kid3.png);
+}
+
+.kid_downright {
+  background-image: url(images/basic_pictures/kid4.png);
+}
+
+.selected {
+  background-color: 'lightblue';
+  color: 'darkred';
+}
+
+.content {
+  width: 80vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  background: url(./images/basic_pictures/pn2_home.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 3px solid saddlebrown;
+}
+
+.powitanie, .gallery_choosing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.powitanie > h1, .gallery_choosing > h1 {
+  color: gold;
+  font-size: 3rem;
+  text-align: center;
+  text-shadow: -5px 0 saddlebrown, 0 5px saddlebrown, 5px 0 saddlebrown, 0 -5px saddlebrown;
+}
+
+.kontakt, .galeria, .oferta, .wideoteka {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  height: 100%;
+}
+
+.kontakt {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.oferta {
+  padding: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.oferta li {
+  margin-left: 2vw;
+}
+
+.wideoteka {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+.wideoteka > iframe {
+  width: 35vw;
+  height: 30vh;
+}
+
+.photo_series {
+  height: inherit;
+  width: 100%;
+}
+
+.top-down_slider {
+  width: 30%;
+  height: auto;
+  overflow-y: scroll;
+}
+
+.photo_book {
+  height: 97%;
+  display: flex;
+  justify-content: space-around;
+  overflow-y: scroll;
+  flex-wrap: wrap;
+}
+
+.photo_book div:first-child {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.photo_book button {
+  position: fixed;
+}
+
+.photos {
+  height: 97%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.img {
+  height: 120px;
+  width: 20%;
+  border: 2px solid saddlebrown;
+}
+
+.big {
+  overflow: visible;
+}
+
+.img:active {
+  transform: scale(5);
+  z-index: 10000;
+  top: 40vh;
+  vertical-align: middle;
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-content: center;
+  overflow: visible;
+  border: 5px solid saddlebrown;
+}
+
+.kontakt_info {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.kontakt_info > p {
+  margin: 20px 0;
+  font-size: 1.5rem;
+}
+
+iframe {
+  display: flex;
+  width: 70%;
+  height: 50%;
+}
+
+.iframe {
+  display: flex;
+}
+
+.map_iframe {
+  display: flex;
+}
+
+footer {
+  height: 5vh;
+}
+
+header, .nav_1, aside, footer {
+  background-color: peachpuff;
+}
+
+footer {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media (min-width: 801px) {
+  html {
+    font-size: 16px;
+  }
+
+  .map_iframe {
+    height: 80%;
+  }
+}
+@media (max-width: 800px) {
+  html {
+    font-size: 14px;
+  }
+
+  .kontakt {
+    flex-direction: column;
+  }
+
+  header h1 {
+    background-size: 30% 100%;
+    background-position: center;
+  }
+
+  .map_iframe {
+    height: 50%;
+  }
+
+  .img:active {
+    transform: scale(4);
+  }
+}
+@media (max-width: 600px) {
+  html {
+    font-size: 12px;
+  }
+
+  header h1 {
+    background-size: 40% 100%;
+  }
+
+  .img:active {
+    transform: scale(3);
+  }
+}
+@media (max-width: 500px) {
+  html {
+    font-size: 10px;
+  }
+
+  header h1 {
+    background-size: 50% 100%;
+  }
+
+  .img:active {
+    transform: scale(2);
+  }
+}
+@media (max-width: 400px) {
+  html {
+    font-size: 8px;
+  }
+
+  header h1 {
+    background-size: 60% 100%;
+  }
+
+  .img:active {
+    transform: scale(1.5);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
