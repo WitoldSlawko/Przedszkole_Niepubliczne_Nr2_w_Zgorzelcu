@@ -32,7 +32,7 @@ header {
 header h1 {
   font-size: 2rem;
   text-align: center;
-  background-image: url(./images/basic_pictures/non-profit-kids.png);
+  background-image: url(../images/basic_pictures/non-profit-kids.png);
   background-size: 20% 100%;
   background-repeat: repeat;
   background-color: peachpuff;
@@ -130,19 +130,19 @@ aside {
 }
 
 .kid_topleft {
-  background-image: url(images/basic_pictures/kid1.png);
+  background-image: url(../images/basic_pictures/kid1.png);
 }
 
 .kid_downleft {
-  background-image: url(images/basic_pictures/kid2.png);
+  background-image: url(../images/basic_pictures/kid2.png);
 }
 
 .kid_topright {
-  background-image: url(images/basic_pictures/kid3.png);
+  background-image: url(../images/basic_pictures/kid3.png);
 }
 
 .kid_downright {
-  background-image: url(images/basic_pictures/kid4.png);
+  background-image: url(../images/basic_pictures/kid4.png);
 }
 
 .selected {
@@ -155,7 +155,7 @@ aside {
   height: 80vh;
   display: flex;
   flex-direction: column;
-  background: url(./images/basic_pictures/pn2_home.png);
+  background: url(../images/basic_pictures/pn2_home.png);
   background-size: cover;
   background-repeat: no-repeat;
   border: 3px solid saddlebrown;
@@ -305,7 +305,7 @@ footer {
   height: 5vh;
 }
 
-header, .nav_1, aside, footer {
+header, .nav_1, .left_as, .right_as, .foot {
   background-color: peachpuff;
 }
 

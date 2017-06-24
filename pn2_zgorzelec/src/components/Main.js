@@ -34,7 +34,7 @@ class Main extends Component {
         </div>
         <RightAside />
       </main>
-      <footer>&#9786;&#9786;&#9786; zapraszamy &#9786;&#9786;&#9786;</footer>
+      <footer className="foot">&#9786;&#9786;&#9786; zapraszamy &#9786;&#9786;&#9786;</footer>
     </div>
 		)
 	}
