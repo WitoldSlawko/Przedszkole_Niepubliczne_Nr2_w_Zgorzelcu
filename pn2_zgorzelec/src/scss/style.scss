@@ -35,7 +35,7 @@ header {
   h1 {
     font-size: 2rem;
     text-align: center;
-    background-image: url(../images/basic_pictures/non-profit-kids.png);
+    //background-image: url(../images/basic_pictures/non-profit-kids.png);
     background-size: 20% 100%;
     background-repeat: repeat;
     background-color: $bg_color;
@@ -81,7 +81,7 @@ span {
 .nav_2 {
   a {
     font-size: 1em;
-    color: $bg_color;
+    color: $font_color;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     display: flex;
     justify-content: center;
@@ -128,8 +128,9 @@ aside {
   overflow: hidden;
   display: flex;
   justify-content: center;
+  background-color: white;
 }
-
+/*
 .kid_downleft, .kid_topright, .kid_downright, .kid_topleft {
   display: flex;
 	background-position: center;
@@ -154,7 +155,7 @@ aside {
 .kid_downright {
   background-image: url(../images/basic_pictures/kid4.png);
 }
-
+*/
 .selected {
   background-color: 'lightblue';
   color: 'darkred';
@@ -180,10 +181,10 @@ aside {
 }
 
 .powitanie > h1, .gallery_choosing > h1 {
-  color: $title_color;
+  color: $font_color;
   font-size: 3rem;
 	text-align: center;
-  text-shadow: -5px 0 $font_color, 0 5px $font_color, 5px 0 $font_color, 0 -5px $font_color;
+  text-shadow: -3px 0 $bg_color, 0 3px $bg_color, 3px 0 $bg_color, 0 -3px $bg_color;
 }
 
 .kontakt, .galeria, .oferta, .wideoteka {
@@ -316,6 +317,12 @@ iframe {
 
 footer {
   height: 5vh;
+  > p {
+    position: relative;
+    top: 25%;
+    color: $font_color;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
 }
 
 header, .nav_1, .left_as, .right_as, .foot {

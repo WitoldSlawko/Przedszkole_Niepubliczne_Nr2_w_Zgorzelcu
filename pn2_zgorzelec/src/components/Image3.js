@@ -1,6 +1,6 @@
 import React from 'react';
 
-let Image_3 = function statelessFunctionComponentClass(props) {
+let Image3 = function statelessFunctionComponentClass(props) {
 /*
   let style = {
     width: '200px',
@@ -19,4 +19,4 @@ let Image_3 = function statelessFunctionComponentClass(props) {
   );
 };
 
-export default Image_3;
+export default Image3;

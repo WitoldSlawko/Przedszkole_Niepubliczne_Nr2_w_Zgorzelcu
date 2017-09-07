@@ -1,6 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { Router, Route, IndexRoute, hashHistory } from 'react-router'
+//import { Router, Route, IndexRoute, hashHistory } from 'react-router'
 import Main from './Main';
 
 class App extends React.Component {

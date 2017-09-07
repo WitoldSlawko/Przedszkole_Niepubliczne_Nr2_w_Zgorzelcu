@@ -136,7 +136,7 @@ const images = [
     require("../images/2_Wystep_w_MDK/DSC_0226.jpg")
 ];
  
-export default class LightBox_2 extends Component {
+export default class LightBox2 extends Component {
     constructor(props) {
         super(props);
  

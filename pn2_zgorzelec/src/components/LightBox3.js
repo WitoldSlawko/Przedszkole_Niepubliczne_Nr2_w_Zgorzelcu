@@ -44,7 +44,7 @@ const images = [
     require("../images/3_Jaselka_w_przedszkolu/DSC02805.jpg")
 ];
  
-export default class LightBox_3 extends Component {
+export default class LightBox3 extends Component {
     constructor(props) {
         super(props);
  

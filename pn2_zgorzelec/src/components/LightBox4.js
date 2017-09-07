@@ -55,7 +55,7 @@ const images = [
     require("../images/4_Jaselka_w_MDK/DSC03205.jpg")
 ];
  
-export default class LightBox_4 extends Component {
+export default class LightBox4 extends Component {
     constructor(props) {
         super(props);
  

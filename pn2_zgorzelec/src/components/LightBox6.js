@@ -78,7 +78,7 @@ const images = [
     require("../images/6_Polkolonia/DSCI0078.jpg")
 ];
  
-export default class LightBox_6 extends Component {
+export default class LightBox6 extends Component {
     constructor(props) {
         super(props);
  

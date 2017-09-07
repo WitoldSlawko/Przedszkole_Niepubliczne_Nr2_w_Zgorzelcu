@@ -1,7 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 
-class ContactContent extends React.Component {
+export default class ContactContent extends React.Component {
   render() {
     return (
       <div className="kontakt">
@@ -21,8 +20,6 @@ class ContactContent extends React.Component {
     );
   }
 }
-
-export default ContactContent;
 
 /*
 style={{width: '600', height: '450', frameborder: '0', border:'0'}} 

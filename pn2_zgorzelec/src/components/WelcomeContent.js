@@ -1,7 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 
-class WelcomeContent extends React.Component {
+export default class WelcomeContent extends React.Component {
   render() {
     return (
       <div className="powitanie">
@@ -12,5 +11,3 @@ class WelcomeContent extends React.Component {
     );
   }
 }
-
-export default WelcomeContent;

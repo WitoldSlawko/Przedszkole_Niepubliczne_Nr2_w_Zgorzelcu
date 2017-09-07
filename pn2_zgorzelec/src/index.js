@@ -9,12 +9,12 @@ import OfferContent from './components/OfferContent';
 import GalleryContent from './components/GalleryContent';
 import MoviesContent from './components/MoviesContent';
 import ContactContent from './components/ContactContent';
-import Gallery_1 from './components/Gallery_1';
-import Gallery_2 from './components/Gallery_2';
-import Gallery_3 from './components/Gallery_3';
-import Gallery_4 from './components/Gallery_4';
-import Gallery_5 from './components/Gallery_5';
-import Gallery_6 from './components/Gallery_6';
+import Gallery1 from './components/Gallery1';
+import Gallery2 from './components/Gallery2';
+import Gallery3 from './components/Gallery3';
+import Gallery4 from './components/Gallery4';
+import Gallery5 from './components/Gallery5';
+import Gallery6 from './components/Gallery6';
 
 ReactDOM.render((
   <Router history={hashHistory}>
@@ -24,12 +24,12 @@ ReactDOM.render((
       <Route path="gallerycontent" component={GalleryContent} />
       <Route path="moviescontent" component={MoviesContent} />
       <Route path="contactcontent" component={ContactContent} />
-      <Route path="gallery_1" component={Gallery_1} />
-      <Route path="gallery_2" component={Gallery_2} />
-      <Route path="gallery_3" component={Gallery_3} />
-      <Route path="gallery_4" component={Gallery_4} />
-      <Route path="gallery_5" component={Gallery_5} />
-      <Route path="gallery_6" component={Gallery_6} />
+      <Route path="gallery_1" component={Gallery1} />
+      <Route path="gallery_2" component={Gallery2} />
+      <Route path="gallery_3" component={Gallery3} />
+      <Route path="gallery_4" component={Gallery4} />
+      <Route path="gallery_5" component={Gallery5} />
+      <Route path="gallery_6" component={Gallery6} />
     </Route>
   </Router>
 ), document.querySelector('[data-react-application]'));

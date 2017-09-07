@@ -1,11 +1,11 @@
 import React from 'react';
-import Image_1 from './Image_1';
-import photoSet_1 from '../json/photoSet_1.json';
+import Image1 from './Image1';
+import photoSet1 from '../json/photoSet1.json';
 
-class PhotoBook_1 extends React.Component{
+export default class PhotoBook1 extends React.Component{
   
   createImage(image) {
-    return <Image_1 source={image} key={image} />;
+    return <Image1 source={image} key={image} />;
   }
 
   createImages(images) {
@@ -15,13 +15,11 @@ class PhotoBook_1 extends React.Component{
   render() {
     return (
       <div className="photos">
-        {this.createImages(photoSet_1.images)}
+        {this.createImages(photoSet1.images)}
       </div>
     );
   }
 };
-
-export default PhotoBook_1;
 
 /*
 let PhotoBook_1 = React.createClass({

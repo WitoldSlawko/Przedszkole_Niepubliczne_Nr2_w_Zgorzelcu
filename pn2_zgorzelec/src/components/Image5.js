@@ -1,6 +1,6 @@
 import React from 'react';
 
-let Image_6 = function statelessFunctionComponentClass(props) {
+let Image5 = function statelessFunctionComponentClass(props) {
 /*
   let style = {
     width: '200px',
@@ -10,7 +10,7 @@ let Image_6 = function statelessFunctionComponentClass(props) {
   let sectionStyle = {
   width: '200px',
   margin: '10px 5px 0px 5px',
-  backgroundImage: "url(" + require("../images/6_Polkolonia/" + props.source) + ")",
+  backgroundImage: "url(" + require("../images/5_Wycieczka/" + props.source) + ")",
   backgroundSize: 'cover'
 };
 
@@ -19,4 +19,4 @@ let Image_6 = function statelessFunctionComponentClass(props) {
   );
 };
 
-export default Image_6;
+export default Image5;

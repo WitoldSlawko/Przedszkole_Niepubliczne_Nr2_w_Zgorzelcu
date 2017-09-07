@@ -219,7 +219,7 @@ const images = [
     require("../images/5_Wycieczka/P1010213.jpg")
 ];
  
-export default class LightBox_5 extends Component {
+export default class LightBox5 extends Component {
     constructor(props) {
         super(props);
  
