@@ -264,6 +264,8 @@ aside {
   height: 120px;
   width: 20%;
   border: 2px solid $font_color;
+  transition: 1s;
+  cursor: pointer;
 }
 
 .big {
@@ -281,6 +283,7 @@ aside {
   align-content: center;
   overflow: visible;
   border: 5px solid $font_color;
+  border-radius: 50%;
 }
 
 .kontakt_info {

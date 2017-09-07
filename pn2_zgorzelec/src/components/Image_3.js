@@ -1,12 +1,12 @@
 import React from 'react';
 
 let Image_3 = function statelessFunctionComponentClass(props) {
-
+/*
   let style = {
     width: '200px',
     margin: '10px 5px 0px 5px'
   };
-  
+*/  
   let sectionStyle = {
   width: '200px',
   margin: '10px 5px 0px 5px',
@@ -15,7 +15,7 @@ let Image_3 = function statelessFunctionComponentClass(props) {
 };
 
   return (
-    <div className='img' style={sectionStyle}></div>
+    <div className='img' title="Przytrzymaj by powiększyć" style={sectionStyle}></div>
   );
 };
 

@@ -254,6 +254,8 @@ aside {
   height: 120px;
   width: 20%;
   border: 2px solid saddlebrown;
+  transition: 1s;
+  cursor: pointer;
 }
 
 .big {
@@ -270,7 +272,8 @@ aside {
   justify-content: center;
   align-content: center;
   overflow: visible;
-  border: 5px solid saddlebrown;
+  border: 3px solid saddlebrown;
+  border-radius: 50%;
 }
 
 .kontakt_info {
