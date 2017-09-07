@@ -19,7 +19,7 @@ class Main extends Component {
 					: 
 					<Link onClick={this.props.handleClick2} style={{ background: '#434141', color: '#1D8787' }} to="gallerycontent">Galeria</Link>}
         {this.props.click3 ? 
-					<Link onClick={this.props.handleClick3} style={{ background: '#1D8787', color: 'peachpuff' }} to="moviescontent">Wideoteka</Link> 
+					<Link onClick={this.props.handleClick3} style={{ background: '#1D8787', color: 'peachpuff' }} style={{ background: '#1D8787', color: 'peachpuff' }} to="moviescontent">Wideoteka</Link> 
 					: 
 					<Link onClick={this.props.handleClick3} style={{ background: '#434141', color: '#1D8787' }} to="moviescontent">Wideoteka</Link>}
         {this.props.click4 ? 
