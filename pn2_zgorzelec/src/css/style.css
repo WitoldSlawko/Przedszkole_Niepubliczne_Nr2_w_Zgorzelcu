@@ -29,6 +29,10 @@ header {
   align-items: center;
 }
 
+h1 {
+  font-weight: bold;
+}
+
 header h1 {
   font-size: 2rem;
   text-align: center;
@@ -117,7 +121,7 @@ aside {
   overflow: hidden;
   display: flex;
   justify-content: center;
-  background-color: white;
+  background-color: peachpuff;
 }
 
 /*
