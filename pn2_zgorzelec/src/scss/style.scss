@@ -80,6 +80,7 @@ span {
   min-height: 3vh;
   display: flex;
   justify-content: space-around;
+  background-color: $bg_color;
 }
 
 .nav_2 {
@@ -107,7 +108,6 @@ span {
   > a {
     color: $bg_color;
     border-radius: 50%;
-    border: 1px solid $font_color;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   }
 }
@@ -116,6 +116,10 @@ a {
   cursor: pointer;
   text-decoration: none;
   padding: 3px 5px;
+}
+
+a {
+  border: none;
 }
 
 main {
@@ -132,7 +136,7 @@ aside {
   overflow: hidden;
   display: flex;
   justify-content: center;
-  background-color: peachpuff;
+  background-color: $font_color;
 }
 /*
 .kid_downleft, .kid_topright, .kid_downright, .kid_topleft {
@@ -170,10 +174,11 @@ aside {
   height: 80vh;
 	display: flex;
 	flex-direction: column;
-  background: url(../images/basic_pictures/pn2_home.png);
+  //background: url(../images/basic_pictures/pn2_home.png);
+  background-color: #FFDBB5; // gray;
   background-size: cover;
   background-repeat: no-repeat;
-  border: 3px solid $font_color;
+  //border: 3px solid $font_color;
 }
 
 .powitanie, .gallery_choosing {
@@ -182,6 +187,9 @@ aside {
   align-items: center;
   width: 100%;
   height: 100%;
+  background: url(../images/basic_pictures/pn2_home.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .powitanie > h1, .gallery_choosing > h1 {
@@ -211,6 +219,10 @@ aside {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+
+.oferta ul {
+  list-style: square;
 }
 
 .oferta li {
@@ -268,7 +280,7 @@ aside {
 .img {
   height: 120px;
   width: 20%;
-  border: 2px solid $font_color;
+  //border: 2px solid $font_color;
   transition: 1s;
   cursor: pointer;
 }
@@ -287,8 +299,8 @@ aside {
   justify-content: center;
   align-content: center;
   overflow: visible;
-  border: 5px solid $font_color;
-  border-radius: 50%;
+  //border: 5px solid $font_color;
+  //border-radius: 90%;
 }
 
 .kontakt_info {

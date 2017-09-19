@@ -7,7 +7,7 @@ render() {
           <p>
             Dzieci w przedszkolu w radosnej atmosferze nawiązują kontakty i przyjaźnie. Wpływa to korzystnie na rozwój zachowań społecznych takich jak: tolerancja, ustępowanie, pomoc, cierpliwość, odwaga.
           </p>
-          <ul>NASZE PRZEDSZKOLE OFERUJE: 
+          <ul><u>NASZE PRZEDSZKOLE OFERUJE:</u> 
             <li>kontakty ze środowiskiem</li>
             <li>poznawanie przyrody</li>
             <li>spotkania z ciekawymi ludźmi</li>

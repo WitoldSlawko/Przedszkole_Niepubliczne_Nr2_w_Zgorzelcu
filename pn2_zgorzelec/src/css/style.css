@@ -43,7 +43,7 @@ header h1 {
   text-align: center;
   width: 100%;
   text-transform: uppercase;
-  color: #1D8787;
+  color: #FFDBB5;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   display: flex;
   flex-direction: column;
@@ -75,11 +75,12 @@ span {
   min-height: 3vh;
   display: flex;
   justify-content: space-around;
+  background-color: #434141;
 }
 
 .nav_2 a {
   font-size: 1em;
-  color: #1D8787;
+  color: #FFDBB5;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   display: flex;
   justify-content: center;
@@ -97,7 +98,6 @@ span {
 .nav_1 > a {
   color: #434141;
   border-radius: 50%;
-  border: 1px solid #1D8787;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
@@ -105,6 +105,10 @@ a {
   cursor: pointer;
   text-decoration: none;
   padding: 3px 5px;
+}
+
+a {
+  border: none;
 }
 
 main {
@@ -121,7 +125,7 @@ aside {
   overflow: hidden;
   display: flex;
   justify-content: center;
-  background-color: peachpuff;
+  background-color: #FFDBB5;
 }
 
 /*
@@ -160,10 +164,9 @@ aside {
   height: 80vh;
   display: flex;
   flex-direction: column;
-  background: url(../images/basic_pictures/pn2_home.png);
+  background-color: #FFDBB5;
   background-size: cover;
   background-repeat: no-repeat;
-  border: 3px solid #1D8787;
 }
 
 .powitanie, .gallery_choosing {
@@ -172,10 +175,13 @@ aside {
   align-items: center;
   width: 100%;
   height: 100%;
+  background: url(../images/basic_pictures/pn2_home.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .powitanie > h1, .gallery_choosing > h1 {
-  color: #1D8787;
+  color: #FFDBB5;
   font-size: 3rem;
   text-align: center;
   text-shadow: -3px 0 #434141, 0 3px #434141, 3px 0 #434141, 0 -3px #434141;
@@ -201,6 +207,10 @@ aside {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+
+.oferta ul {
+  list-style: square;
 }
 
 .oferta li {
@@ -258,7 +268,6 @@ aside {
 .img {
   height: 120px;
   width: 20%;
-  border: 2px solid #1D8787;
   transition: 1s;
   cursor: pointer;
 }
@@ -277,8 +286,6 @@ aside {
   justify-content: center;
   align-content: center;
   overflow: visible;
-  border: 5px solid #1D8787;
-  border-radius: 50%;
 }
 
 .kontakt_info {
@@ -315,7 +322,7 @@ footer {
 footer > p {
   position: relative;
   top: 25%;
-  color: #1D8787;
+  color: #FFDBB5;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
