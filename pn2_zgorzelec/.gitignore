@@ -7,7 +7,7 @@
 /coverage
 
 # production
-/build
+# /build
 
 # misc
 .DS_Store
@@ -19,12 +19,3 @@ yarn-error.log*
 /PN2_page
 
 .sass-cache
-
-/src/images/*
-/src/images/
-/src/images
-
-*.jpg
-
-*.png
-
