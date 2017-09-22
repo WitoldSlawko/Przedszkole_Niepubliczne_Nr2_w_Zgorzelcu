@@ -26,15 +26,22 @@ body{
 header {
   height: 10vh;
 	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
+	//flex-direction: column;
+  //justify-content: flex-end;
+  justify-content: space-between;
 	align-items: center;
 }
 
 h1 {
   font-weight: bold;
 }
-
+/*
+.herb_zgorzelec {
+  background-image: url(../images/basic_pictures/herb_zgorzelec.png);
+  height: 100px;
+  width: 100px;
+}
+*/
 header {
   h1 {
     font-size: 2rem;
@@ -45,7 +52,7 @@ header {
     background-color: $bg_color;
     height: 10vh;
     text-align: center;
-    width: 100%;
+    //width: 100%;
     text-transform: uppercase;
     color: $font_color;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
